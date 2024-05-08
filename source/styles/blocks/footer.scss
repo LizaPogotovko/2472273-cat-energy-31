@@ -1,5 +1,21 @@
-.footer__wrapper {
+.footer {
   background-color: $bg-base;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+    width: 128px;
+  }
 }
 
 .footer__logo::after {
@@ -19,4 +35,16 @@
 
 .footer__logo:active::after {
   background-color: $base-color-text-active;
+}
+
+.footer__social {
+  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+    width: 132px;
+  }
+}
+
+.footer__copyright {
+  @media ((min-width: $tablet-width) and (min-width: $desktop-width)) {
+    width: 168px;
+  }
 }

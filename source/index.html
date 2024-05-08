@@ -22,8 +22,8 @@
     <div class="header__container container">
       <a class="header__logo logo" href="#">
         <picture>
-          <source media="(min-width: 1200px)" width="70" height="59" srcset="images/logo-picture-desktop.svg" type="image/svg+xml">
-          <source media="(min-width: 768px)" width="60" height="50" srcset="images/logo-picture-tablet.svg" type="image/svg+xml">
+          <source type="image/svg+xml" media="(min-width: 1200px)" width="70" height="59" srcset="images/logo-picture-desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-picture-tablet.svg">
           <img class="logo__picture" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт Энерджи">
         </picture>
         <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
@@ -58,8 +58,8 @@
           питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width: 1200px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x" type="image/png">
-          <source media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" type="images/png">
+          <source type="image/png" media="(min-width: 1200px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
           <img class="hero__description-picture" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Питание для кошек Cat Energy">
         </picture>
         <a class="hero__button button button--primary " href="#">Подобрать программу</a>
@@ -132,16 +132,18 @@
     <section class="contacts">
       <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Адрес Cat Energy</h2>
-        <p class="contacts__description">
-          Приглашаем к сотрудничеству дилеров!
-        </p>
-        <address class="contacts__address">
-          <span>ул. Большая Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
-        </address>
+        <div class="contacts-text">
+          <p class="contacts__description">
+            Приглашаем к сотрудничеству дилеров!
+          </p>
+          <address class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
         <picture>
-          <source media="(min-width: 1200px)" width="1440" height="400" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" type="image/png">
-          <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="images/png">
+          <source type="image/png" media="(min-width: $desktop-width)" width="1440" height="400" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source type="image/png" media="(min-width: $tablet-width)" width="768" height="400" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
           <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Магазин на карте">
         </picture>
       </div>
