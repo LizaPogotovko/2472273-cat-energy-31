@@ -1,5 +1,19 @@
+.services__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .services__card {
   background-color: $bg-base;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .services__card--slim::before {

@@ -1,12 +1,36 @@
-.example {
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: $bg-secondary;
 }
 
-.example__item-value {
-  font-size: 24px;
-  line-height: 24px;
-  color: $black;
-  text-align: center;
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.example__list-wrapper {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+    grid-template-columns: 162px 162px;
+    gap: 43px;
+  }
 }
 
 .example__total {

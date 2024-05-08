@@ -5,6 +5,16 @@
   text-transform: uppercase;
 }
 
+.navigation__list {
+  @media (min-width: $tablet-width) {
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
 .navigation__list-item:hover {
   opacity: 60%;
 }
@@ -20,4 +30,12 @@
 .navigation__toggle {
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
