@@ -1,3 +1,6 @@
+@use "variables.scss";
+@use "mixins.scss";
+
 .title-h1 {
   font-family: $font-secondary;
   font-size: 36px;

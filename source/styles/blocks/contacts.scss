@@ -1,9 +1,12 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.contacts-text {
+.contacts__text {
   display: grid;
   grid-template-columns: 140px 140px;
 
@@ -17,6 +20,7 @@
 }
 
 .contacts__description {
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $secondary-color-text;
@@ -29,6 +33,3 @@
   font-style: normal;
 }
 
-.contacts__wrapper-catalog {
-  background-color: $bg-base;
-}

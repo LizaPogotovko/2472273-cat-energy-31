@@ -1,3 +1,6 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .example {
   background-color: $bg-secondary;
 
@@ -12,8 +15,8 @@
 }
 
 .example__title {
-  font-size: 36px;
   line-height: 40px;
+  color: $black;
 }
 
 .example__list {

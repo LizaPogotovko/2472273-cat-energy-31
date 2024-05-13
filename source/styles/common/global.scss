@@ -1,3 +1,6 @@
+@use "variables.scss";
+@use "mixins.scss";
+
 *,
 *::before,
 *::after {
@@ -9,21 +12,9 @@ html {
 }
 
 body {
-  font-family: $primary-font;
+  font-family: $font-primary;
   font-size: 14px;
   line-height: 18px;
-  color: $base-color-text;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  display: block;
-  text-decoration: none;
   color: $base-color-text;
 }
 

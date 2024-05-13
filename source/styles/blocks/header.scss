@@ -1,3 +1,6 @@
+@use "../common/mixins.scss";
+@use "../common/variables.scss";
+
 .header {
   font-family: $font-secondary;
   font-size: 20px;
@@ -19,7 +22,18 @@
   justify-content: space-between;
 }
 
-.header-logo {
+.header__logo {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 174px;
   }
