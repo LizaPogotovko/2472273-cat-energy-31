@@ -1,12 +1,37 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.product-card {
+  margin: 0 auto;
+  background-color: $bg-base;
+}
+
+.product-card__content {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin-bottom: 17px;
+  padding: 20px 20px 0;
+  border-top: 1px solid $bg-secondary-special;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 32px;
+    padding: 37px 37px 0;
+    border: none;
+  }
+}
+
+.product-card__link {
+  place-self: center;
+}
+
 .product-card__title {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
   color: $tertiary-color-text;
   text-transform: uppercase;
+  width: 76px;
 }
 
 .product-card__list {
@@ -17,4 +42,25 @@
 .product-card__link-title {
   font-family: $font-secondary;
   text-decoration: none;
+  width: 76px;
+}
+
+.product-card__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__item-text {
+  margin: 0;
+}
+
+.product-card__button {
+  margin: 0 20px 25px;
+  width: 280px;
+  text-align: center;
+  padding: 10px 80px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }

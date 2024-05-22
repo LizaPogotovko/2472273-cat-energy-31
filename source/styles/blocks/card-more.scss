@@ -1,20 +1,27 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.card-more::before {
+.card-more__content::before {
   content: "";
   display: block;
   background-image: url("../../icons/stack.svg#catalog-card-plus");
   background-position: center;
   background-repeat: no-repeat;
-  width: 30px;
   height: 30px;
+}
+
+.card-more__content {
+  margin-bottom: 17px;
+  padding: 20px 20px 0;
+  border-top: 1px solid $bg-secondary-special;
+  text-align: center;
 }
 
 .card-more__title {
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 20px;
+  margin: 23px 0 8px;
   color: $secondary-color-text;
   text-transform: uppercase;
 }
@@ -22,4 +29,12 @@
 .card-more__description {
   font-size: 12px;
   line-height: 16px;
+  margin: 0 0 21px;
+}
+
+.card-more__button {
+  margin: 0 20px 25px;
+  width: 280px;
+  text-align: center;
+  padding: 10px 80px;
 }

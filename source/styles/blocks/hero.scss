@@ -3,8 +3,117 @@
 
 .hero {
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+}
+
+.hero__title {
+  text-align: center;
+  margin: 27px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 65px 0 40px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.hero__wrapper {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 120px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 512px;
+    margin: 0 0 82px;
+    padding: 0 810px 0 190px;
+  }
+}
+
+.hero__wrapper::before {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  z-index: -3;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 302px;
+  background-image: url("../../images/background-cat@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-color: $color-primary-special;
+  background-blend-mode: overlay;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    top: -180px;
+    right: 0;
+    left: auto;
+    width: 720px;
+    height: 694px;
+  }
 }
 
 .hero__description {
+  font-family: $font-secondary;
+  line-height: 14px;
+  text-align: center;
   text-transform: uppercase;
+  margin: 0 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.hero__description-picture {
+  display: block;
+  margin-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 331px;
+  }
+}
+
+.hero__button {
+  width: 100%;
+  padding: 10px 40px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    position: absolute;
+    width: 244px;
+    top: 215px;
+    padding: 14px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }

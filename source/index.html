@@ -24,28 +24,25 @@
         <picture>
           <source type="image/svg+xml" media="(min-width: 1200px)" width="70" height="59" srcset="images/logo-picture-desktop.svg">
           <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-picture-tablet.svg">
-          <img class="header__logo--picture" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт Энерджи">
+          <img class="header__logo-picture" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип магазина Кэт Энерджи">
         </picture>
-        <img class="header__logo--text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        <img class="header__logo-text" src="images/logo-header-text.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="header__navigation navigation">
-        <button class="navigation__toggle" type="button">
-          <img src="images/logo-navigation.svg" width="24" height="16" alt="Открыть меню">
+        <button class="navigation__toggle navigation__toggle--closed navigation__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a class="navigation__list-link navigation__list-link--active" href="#">Главная</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__list-link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation__list navigation__list--closed navigation__list--nojs">
+          <li class="navigation__list-item">
+            <a class="navigation__list-link navigation__list-link--active" href="#">Главная</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-link" href="#">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -91,42 +88,53 @@
         <h2 class="advantages__title title-h1">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--benefit">
-            <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="advantages__description">Функциональное питание<br> содержит только полезные<br> питательные вещества.</p>
           </li>
           <li class="advantages__item advantages__item--view">
-            <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="advantages__description">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</p>
           </li>
           <li class="advantages__item advantages__item--advice">
-            <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="advantages__description">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.</p>
           </li>
           <li class="advantages__item advantages__item--result">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже через месяц<br> наслаждайтесь изменениями<br> к лучшему вашего питомца!</p>
           </li>
         </ul>
       </div>
     </section>
     <!-- Example -->
     <section class="example">
-      <div class="example__wrapper container">
+      <div class="example__wrapper">
         <h2 class="example__title title-h1">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__list">
-          <div class="example__list-wrapper">
-            <div class="example__item">
-              <p class="example__item-value">5 КГ</p>
-              <p class="example__item-text">снижение веса</p>
-            </div>
-            <div class="example__item">
-              <p class="example__item-value">60 ДНЕЙ</p>
-              <p class="example__item-text">затрачено времени</p>
+        <div class="example__wrapper-content">
+          <div class="example__wrapper-text  container">
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__list">
+              <div class="example__list-wrapper">
+                <div class="example__item">
+                  <p class="example__item-value">5 КГ</p>
+                  <p class="example__item-text">снижение веса</p>
+                </div>
+                <div class="example__item">
+                  <p class="example__item-value">60 ДНЕЙ</p>
+                  <p class="example__item-text">затрачено времени</p>
+                </div>
+              </div>
+              <div class="example__total">
+                <span>Затраты на питание:</span>
+                <span>15 000 РУБ.</span>
+              </div>
             </div>
           </div>
-          <div class="example__total">
-            <span>15 000 РУБ.</span>
-            <span>Затраты на питание:</span>
+          <div class="example__picture">
+            <picture>
+              <source type="image/png" media="(min-width: 1200px)" width="560" height="512" srcset="images/example-slider-desktop@1x.png 1x, images/example-slider-desktop@2x.png 2x">
+              <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/example-slider-tablet@1x.png 1x, images/example-slider-tablet@2x.png 2x">
+              <img class="example__picture-content" src="images/example-slider-mobile@1x.png" srcset="images/example-slider-mobile@2x.png 2x" width="280" height="256" alt="Cats">
+            </picture>
           </div>
         </div>
-        <img src="#" alt="Коты">
+
       </div>
     </section>
     <!-- Contacts -->
@@ -179,6 +187,7 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
