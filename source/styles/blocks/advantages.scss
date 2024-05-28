@@ -6,13 +6,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
-    padding: 0 0 47px;
     border-bottom: 1px solid $border-color-tertiary-special;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
-    padding: 0 110px;
+    padding-bottom: 0;
     border: none;
   }
 }
@@ -24,29 +23,29 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // counter-reset: example 1;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 37px 137px;
-    padding: 0 30px;
+    counter-reset: example 0;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
+    padding-bottom: 0;
   }
 }
 
 .advantages__title {
-  margin: 0 0 40px;
+  margin: 0 0 37px;
   line-height: 40px;
   color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 0 30px;
   }
 }
 
@@ -77,16 +76,18 @@
   height: 60px;
   display: block;
   position: absolute;
-}
 
-// .advantages__item--benefit::marker {
-//   content: counter(example);
-// }
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 .advantages__item--benefit {
   @media (min-width: $tablet-width) {
     padding: 151px 26px 57px 0;
     position: relative;
+    counter-increment: example 1;
   }
 }
 
@@ -94,6 +95,7 @@
   @media (min-width: $tablet-width) {
     padding: 151px 22px 57px 0;
     position: relative;
+    counter-increment: example 1;
   }
 }
 
@@ -101,6 +103,7 @@
   @media (min-width: $tablet-width) {
     padding: 151px 40px 57px 0;
     position: relative;
+    counter-increment: example 1;
   }
 }
 
@@ -108,6 +111,7 @@
   @media (min-width: $tablet-width) {
     padding: 151px 4px 57px 0;
     position: relative;
+    counter-increment: example 1;
   }
 }
 
@@ -117,7 +121,22 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
+    font-style: $font-secondary;
     top: 40;
+  }
+}
+
+.advantages__item::after {
+  @media (min-width: $tablet-width) {
+    font-family: $font-secondary;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: counter(example);
+    color: $bg-base;
+    font-size: 280px;
+    line-height: 280px;
+    z-index: -3;
   }
 }
 

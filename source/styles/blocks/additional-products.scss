@@ -1,6 +1,14 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.additional-products {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
+}
+
 .additional-products__title {
   font-family: $font-secondary;
   font-weight: 400;
@@ -10,7 +18,14 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+    margin-left: 40px;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 80px;
   }
 }
 
@@ -63,7 +78,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 15px 1px 17px;
+    padding: 15px 1px 14px;
     align-items: center;
     border-left: 0;
     border-right: 0;
@@ -99,6 +114,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    min-width: 285px;
   }
 }
 

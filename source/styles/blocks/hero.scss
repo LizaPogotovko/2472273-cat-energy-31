@@ -3,9 +3,14 @@
 
 .hero {
   color: $white;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 266px;
   }
 }
 
@@ -18,54 +23,58 @@
     line-height: 60px;
     margin: 65px 0 40px;
     text-align: left;
+    order: -3;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin: 110px 0 40px;
   }
 }
 
 .hero__wrapper {
   margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 120px;
-    position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 512px;
-    margin: 0 0 82px;
-    padding: 0 810px 0 190px;
-  }
 }
 
-.hero__wrapper::before {
+.hero::before {
   position: absolute;
-  top: 66px;
+  top: -27px;
   left: 0;
-  z-index: -3;
+  z-index: -1;
   content: "";
   display: block;
   width: 100%;
   height: 302px;
-  background-image: url("../../images/background-cat@1x.png");
+  background-image: linear-gradient($color-primary-special 320px 302px), url("../../images/background-cat-mobile@1x.png");
   background-size: cover;
   background-position: center;
   background-color: $color-primary-special;
-  background-blend-mode: overlay;
 
   @media (min-width: $tablet-width) {
     display: none;
+    width: 50%;
+    height: calc(100% + 180px);
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     top: -180px;
     right: 0;
-    left: auto;
-    width: 720px;
-    height: 694px;
+    left: 50%;
+    height: 760px;
+  }
+}
+
+.hero__wrapper-content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    margin-left: 80px;
   }
 }
 
@@ -80,7 +89,8 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-bottom: 21px;
+    margin-bottom: 50px;
+    order: -2;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,10 +102,18 @@
   display: block;
   margin-bottom: 3px;
 
+  @media (min-width: $tablet-width) {
+    max-width: 709px;
+    margin-top: -93px;
+    margin-left: -84px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
+    left: 100%;
     top: 0;
-    right: 331px;
+    transform: translate(6%, 24%);
+    max-width: 552px;
   }
 }
 
@@ -107,13 +125,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    position: absolute;
     width: 244px;
-    top: 215px;
     padding: 14px 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
+    order: -1;
+    z-index: 2;
   }
 }

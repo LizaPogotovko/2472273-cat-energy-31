@@ -98,13 +98,12 @@
 }
 
 .services__card-title {
-  margin: 10px 0 30px;
-  padding-left: 70px;
+  margin: 10px 0 30px 75px;
   font-size: 24px;
   line-height: 37px;
   color: $black;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -117,7 +116,19 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
     text-align: center;
-    padding-left: 62px;
+    padding-left: 33px;
+  }
+}
+
+.services__card-title--slim {
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+  }
+}
+
+.services__card-title--pro {
+  @media (min-width: $desktop-width) {
+    padding-left: 75px;
   }
 }
 
@@ -145,15 +156,16 @@
   content: "";
   display: block;
   mask-image: url("../../icons/stack.svg#arrow-right");
-  width: 24px;
-  height: 12px;
-  mask-position: 0 0;
+  width: 32px;
+  height: 10px;
+  mask-size: 28px 10px;
   mask-repeat: no-repeat;
+  mask-position: -8px center;
   background-color: $black;
 }
 
 .services__card-link:hover::after {
-  width: 32px;
+  mask-position: left center;
 }
 
 .services__card-description {
@@ -170,6 +182,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
