@@ -8,7 +8,7 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $white 15%, $bg-base 15%);
+    background: linear-gradient(to bottom, $white 17%, $bg-base 17%);
     width: 100%;
     padding: 0 37px 40px;
     border: none;
@@ -23,7 +23,7 @@
 .product-card__content {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  margin-bottom: 17px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -63,6 +63,13 @@
   font-family: $font-secondary;
   text-decoration: none;
   width: 76px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 135px;
+    margin-left: 57px;
+    margin-top: -2px;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;

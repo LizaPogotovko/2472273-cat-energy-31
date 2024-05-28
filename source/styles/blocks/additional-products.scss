@@ -2,7 +2,7 @@
 @use "../common/variables.scss";
 
 .additional-products {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 96px;
@@ -12,7 +12,7 @@
 .additional-products__title {
   font-family: $font-secondary;
   font-weight: 400;
-  margin-bottom: 36px;
+  margin: 25px 0 36px;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -66,7 +66,7 @@
 }
 
 .additional-products__item {
-  padding: 13px 0 19px;
+  padding: 13px 0 17px;
   border-bottom: 1px solid $border-color-secondary;
 
   @media (min-width: $tablet-width) {

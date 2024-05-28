@@ -20,7 +20,7 @@
   }
 }
 
-.social__item {
+.social__item:not(:last-child) {
   margin-right: 24px;
 }
 
