@@ -19,8 +19,15 @@
 }
 
 .header--catalog {
+  border-bottom: 1px solid $border-color-tertiary;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
   }
 }
 

@@ -12,11 +12,12 @@
   @media (min-width: $tablet-width) {
     border: none;
     margin: 0;
+    margin-left: 41px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 58px;
+    margin-left: 37px;
   }
 }
 

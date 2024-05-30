@@ -1,14 +1,6 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
-.additional-products {
-  margin-bottom: 42px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 96px;
-  }
-}
-
 .additional-products__title {
   font-family: $font-secondary;
   font-weight: 400;
@@ -20,6 +12,7 @@
     line-height: 32px;
     margin-left: 40px;
     margin-bottom: 80px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,16 +23,17 @@
 }
 
 .additional-products__wrapper {
-  display: grid;
-  grid-template-columns: 280px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 708px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: 896px 245px;
     gap: 80px;
+    margin-bottom: 95px;
   }
 }
 
@@ -47,10 +41,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
+    padding-right: 2px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 610px;
+    margin-bottom: 0;
   }
 }
 
@@ -60,13 +57,17 @@
   list-style-type: none;
   border-top: 1px solid $border-color-secondary;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 70px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
 
 .additional-products__item {
-  padding: 13px 0 17px;
+  padding: 13px 0 18px;
   border-bottom: 1px solid $border-color-secondary;
 
   @media (min-width: $tablet-width) {
@@ -78,7 +79,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 15px 1px 14px;
+    padding: 15px 1px 16px;
     align-items: center;
     border-left: 0;
     border-right: 0;
@@ -96,6 +97,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,11 +112,14 @@
 
   @media (min-width: $tablet-width) {
     min-width: 223px;
+    margin: 0;
+    justify-content: end;
+    gap: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     min-width: 285px;
+    justify-content: space-between;
   }
 }
 
