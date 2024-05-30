@@ -1,6 +1,14 @@
 @use "../common/mixins.scss";
 @use "../common/variables.scss";
 
+.additional-products {
+  margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
+}
+
 .additional-products__title {
   font-family: $font-secondary;
   font-weight: 400;
@@ -51,18 +59,25 @@
   }
 }
 
+.additional-products__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 610px;
+  }
+}
+
 .additional-products__list {
   margin: 0 0 35px;
   padding: 0;
   list-style-type: none;
   border-top: 1px solid $border-color-secondary;
-
+  
   @media (min-width: $tablet-width) {
     margin: 0 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
   }
 }
 
